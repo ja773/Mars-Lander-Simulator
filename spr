@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+n_values = np.arange(1, 11)  # n values from 1 to 10
+relative_coefficients = 1 / n_values  # bn/b1 = 1/n
+
+plt.plot(n_values, relative_coefficients, marker='o')
+plt.xlabel('n')
+plt.ylabel('bn/b1')
+plt.title('Relative Fourier Coefficients bn/b1 vs n')
+plt.grid(True)
+plt.show()
